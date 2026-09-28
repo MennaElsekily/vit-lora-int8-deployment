@@ -94,6 +94,5 @@ class ViTPredictor:
         # 6. Return the prediction.
         return {
             "class_id": predicted_id,
-            "class_name": CLASS_NAMES[predicted_id],
             "confidence": float(confidence.item())
         }
